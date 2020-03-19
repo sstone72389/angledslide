@@ -1,0 +1,95 @@
+   .bg-container {
+    width: 100%;
+    background-image: url("//assets.savvas.com/asset_mgr/current/202012/accordian-bg.png");
+    background-size: cover;
+   }
+   .accordion-ang-container {
+     display: inline-block !important;
+   }
+   .accordion-ang {
+     width: 450px;
+     overflow: hidden;
+     transform: skewX(-21deg);
+     margin-left: 50em;
+   }
+   .accordion-ang ul {
+     width: 100%;
+     display: table;
+     table-layout: fixed;
+     margin: 0;
+     padding: 0;
+   }
+   .accordion-ang ul li {
+     display: table-cell;
+     vertical-align: bottom;
+     position: relative;
+     background-repeat: no-repeat;
+     background-position: center center;
+     margin: 50px auto;
+     filter: blur(1.5px);
+     transition: .9s filter linear;
+     transition: all 600ms ease;    
+ }
+   .accordion-ang ul li:hover {
+     filter: blur(0px);
+   }
+   .accordion-ang ul li div {
+     display: block;
+     overflow: hidden;
+     width: 100%;
+     height: 450px;
+   }
+     .accordion-ang ul li div a {
+     display: block;
+     height: 450px;
+     width: 100%;
+     position: relative;
+     z-index: 3;
+     vertical-align: bottom;
+     padding: 15px 20px;
+     box-sizing: border-box;
+     color: #fff;
+     text-decoration: none;
+     font-family: Open Sans, sans-serif;
+     transition: all 300ms ease;
+  }   
+   .accordion-ang ul li:nth-child(1) { background-image: url("//assets.savvas.com/asset_mgr/current/202012/ang-sl-1.jpg");  } 
+   
+   .accordion-ang ul li:nth-child(2) { background-image: url("//assets.savvas.com/asset_mgr/current/202012/ang-sl-2.jpg");  } 
+   
+   .accordion-ang ul li:nth-child(3) { background-image: url("//assets.savvas.com/asset_mgr/current/202012/ang-sl-3.jpg");  } 
+   
+   .accordion-ang ul li:nth-child(4) { background-image: url("//assets.savvas.com/asset_mgr/current/202012/ang-sl-4.jpg");  } 
+   
+   .accordion-ang ul:hover li { width: 8%; }
+   
+   .accordion-ang ul:hover li:hover { width: 60%; 
+   
+   /* filter: blur(0px);  */
+   
+   }
+   
+   .accordion-ang ul:hover li:hover a { background: rgba(0, 0, 0, 0.3); }
+   
+   .accordion-ang ul:hover li:hover a * {
+     opacity: 1;
+     -webkit-transform: translateX(0);
+     transform: translateX(0);
+   }
+   
+   /* @media screen and (max-width: 600px) {
+   
+   .accordion-ang { height: auto; }
+   
+   .accordion-ang ul li,
+   .accordion-ang ul li:hover,
+   .accordion-ang ul:hover li,
+   .accordion-ang ul:hover li:hover {
+     position: relative;
+     display: table;
+     table-layout: fixed;
+     width: 100%;
+     -webkit-transition: none;
+     transition: none;
+       }
+   } */
